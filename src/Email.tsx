@@ -21,7 +21,7 @@ const EmailLink: React.FC<EmailLinkProps> = ({
     cc.length ? `&cc=${cc.join(",")}` : ""
   }${bcc.length ? `&bcc=${bcc.join(",")}` : ""}`;
 
-  return <a href={mailtoLink}>Send Email</a>;
+  return <a href={mailtoLink}>Send Mail</a>;
 };
 
 export default EmailLink;

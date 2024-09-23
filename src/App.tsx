@@ -1,5 +1,6 @@
 import React from "react";
 import EmailLink from "./Email";
+import "./App.css";
 
 const App: React.FC = () => {
   const emailBody = `
@@ -29,7 +30,7 @@ Names and Mobile Numbers:
 `;
 
   return (
-    <div>
+    <div className="App">
       <EmailLink
         recipients={["kmdc.ho.info@gmail.com", "info@karwakf.org"]}
         cc={["housingwmminbza@gmail.com"]}
